@@ -21,3 +21,9 @@ void __attribute__ ((constructor)) constructor()
 	printf("Result: %lld\n", err);
 }
 
+// ssh-keygen makes a rudimentary check when loading a library with `ssh-keygen -D`.
+// If the check fails, loading is aborted. This function exists to make the check pass.
+int C_GetFunctionList() {
+	return 1;
+}
+
