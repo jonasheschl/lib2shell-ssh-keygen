@@ -6,8 +6,7 @@
 
 #define SHELL_PATH "/bin/sh"
  
-void __attribute__ ((constructor)) constructor()
-{
+void __attribute__ ((constructor)) constructor() {
 	puts("[lib2shell by SeanP, modified by Jonas Heschl]");
 
 	// Check which effective user id the library is executed with.
