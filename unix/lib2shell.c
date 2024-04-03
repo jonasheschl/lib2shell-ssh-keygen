@@ -14,8 +14,8 @@ void __attribute__ ((constructor)) constructor() {
 	printf("Current effective UID: %d\n", geteuid());
 
 	// We need to pass -p to the shell to stop it from dropping the effective user id.
-	// Not that -p is used by bash and dash (and possibly other shells) to deactivate this
-	// security measure. If you want to start another shell, you might have to change this switch.
+	// Note that -p is used by bash and dash (and possibly other shells) to deactivate this
+	// security measure. If you want to start a different shell, you might have to change this switch.
 	long long err = execl(SHELL_PATH, SHELL_PATH, "-p", NULL);
 	printf("Result: %lld\n", err);
 }
