@@ -41,5 +41,5 @@ make
 
 ## Windows
 
-Not that this fork drops Windows support. Feel free to open a PR if you know your way around that operating system!
+Note that this fork drops Windows support. Feel free to open a PR if you know your way around that operating system!
 
